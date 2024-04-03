@@ -45,7 +45,7 @@ public:
     }
 };
 
-// Class handling the correspondance between ASCII art and integers (characters are transformed into integers thanks to the hash_function)
+// Class handling the correspondence between ASCII art and integers (characters are transformed into integers thanks to the hash_function)
 class ASCIITable 
 {
 private:
@@ -77,7 +77,7 @@ public:
 
 int main()
 {
-    // Initialize the correspondance table
+    // Initialize the correspondence table
     std::vector<std::string> alphabet = {
     " #  ##   ## ##  ### ###  ## # # ###  ## # # #   # # ###  #  ##   #  ##   ## ### # # # # # # # # # # ### ### ",
     "# # # # #   # # #   #   #   # #  #    # # # #   ### # # # # # # # # # # #    #  # # # # # # # # # #   #   # ",
