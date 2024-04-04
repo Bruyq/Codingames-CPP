@@ -74,7 +74,26 @@ public:
     }
 };
 
-
+// Input example :
+// 4
+// 5
+// MANHATTAN
+//  #  ##   ## ##  ### ###  ## # # ###  ## # # #   # # ###  #  ##   #  ##   ## ### # # # # # # # # # # ### ### 
+// # # # # #   # # #   #   #   # #  #    # # # #   ### # # # # # # # # # # #    #  # # # # # # # # # #   #   # 
+// ### ##  #   # # ##  ##  # # ###  #    # ##  #   ### # # # # ##  # # ##   #   #  # # # # ###  #   #   #   ##
+// # # # # #   # # #   #   # # # #  #  # # # # #   # # # # # # #    ## # #   #  #  # # # # ### # #  #  #       
+// # # ##   ## ##  ### #    ## # # ###  #  # # ### # # # #  #  #     # # # ##   #  ###  #  # # # #  #  ###  #  
+// 
+// Output example :
+// # #  #  ### # #  #  ### ###  #  ###  
+// ### # # # # # # # #  #   #  # # # #
+// ### ### # # ### ###  #   #  ### # #
+// # # # # # # # # # #  #   #  # # # #  
+// # # # # # # # # # #  #   #  # # # # 
+// 
+// I changed the code behavior to make it simple. You can just type the sentence to be converted.
+// If you want the first behavior, please uncomment/comment some lines below.
+//
 int main()
 {
     // Initialize the correspondence table
@@ -88,10 +107,25 @@ int main()
     int l = 4;
     int h = alphabet.size();
     ASCIITable table(l, h, alphabet);
-    
-    // Read a line of characters
     std::string s;
     getline(std::cin, s);
+
+    //// If you want to type the full input, or to use a file to use this string to ASCII representation code, please comment the lines above and uncomment the next part :
+    // 
+    //// Read inputs
+    //int l;
+    //std::cin >> l; std::cin.ignore();
+    //int h;
+    //std::cin >> h; std::cin.ignore();
+    //std::string t;
+    //std::vector<std::string> alphabet;
+    //getline(std::cin, t);
+    //for (int i = 0; i < h; i++) {
+    //    std::string row;
+    //    getline(std::cin, row);
+    //    alphabet.push_back(row);
+    //}
+    //ASCIITable table(l, h, alphabet);
 
     // Create ASCII Art and print the result
     ASCIIString str(h);

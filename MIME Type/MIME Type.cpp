@@ -4,7 +4,7 @@
 #include <algorithm>
 #include <map>
 
-
+// Puts a string in lowercase
 std::string toLower(std::string input)
 {
     std::string res;
@@ -15,6 +15,7 @@ std::string toLower(std::string input)
     return res;
 }
 
+// Returns the extension of a file given it's filename
 std::string getFileExtension(std::string input)
 {
     int ind = input.find_last_of('.');
@@ -28,7 +29,21 @@ std::string getFileExtension(std::string input)
     }
 }
 
-
+// Input example :
+// 2
+// 4
+// html text / html
+// png image / png
+// test.html
+// noextension
+// portrait.png
+// doc.TXT
+//
+// Output example : 
+// text/html
+// UNKNOWN
+// image / png
+// UNKNOWN
 int main()
 {
     // Associative table for correspondence between file extension and MIME Type and output string declaration

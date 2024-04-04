@@ -1,5 +1,16 @@
 #include "tree.h"
 
+
+// Input example : 
+// 5
+// 8 6 13 10 5
+//
+// Output example : 
+// 8 6 5 13 10  (Graph traversed in Pre-Order)
+// 5 6 8 10 13  (Graph traversed in In-Order)
+// 5 6 10 13 8  (Graph traversed in Post-Order)
+// 8 6 13 5 10  (Graph traversed in Level-Order/Breadth-First-Search)
+//
 int main()
 {
     std::cout << "Please enter the number of elements constituting the binary tree, and then the elements, one at a time :\n";

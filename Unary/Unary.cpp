@@ -5,6 +5,8 @@
 #include <bitset>
 
 
+// Input example (ASCII characters) : C
+// Output example (Unary code)      : 0 0 00 0000 0 00
 int main()
 {
     std::cout << "Please enter a message to be converted to unary code :\n";
